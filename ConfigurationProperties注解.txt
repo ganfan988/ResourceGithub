@@ -1,3 +1,5 @@
+https://github.com/ganfan988/ResourceGithub.git
+
 https://start.aliyun.com
 
 <!-配置参数->
