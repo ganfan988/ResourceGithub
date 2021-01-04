@@ -1,35 +1,43 @@
 https://start.aliyun.com
 
+<!-配置参数->
 <dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-configuration-processor</artifactId>
-<optional>true</optional>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-configuration-processor</artifactId>
+  <optional>true</optional>
 </dependency>
 
 http://start.springboot.io/
 
+<!--bootStrap-->
 <dependency>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap</artifactId>
     <version>5.0.0-beta1</version>
 </dependency>
 
-
+<!--jquery-->
 <dependency>
     <groupId>org.webjars</groupId>
     <artifactId>jquery</artifactId>
     <version>3.5.1</version>
 </dependency>
 
-   <properties>
-            <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
-            <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
-   </properties>
 
-      <!-- 引入 freemarker 模板依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
+ <!-- 引入 freemarker 模板依赖 -->
+  <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-freemarker</artifactId>
+   </dependency>
 
+<!--thymeleaf-->
 <html xmlns:th="http://www.thymeleaf.org">  
+   <properties>
+      <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
+      <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+   </properties>
+      <!--引入thymeleaf依赖-->
+ <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-thymeleaf</artifactId>
+   </dependency>
