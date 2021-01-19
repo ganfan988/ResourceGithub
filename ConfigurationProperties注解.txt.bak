@@ -1,4 +1,4 @@
-https://github.com/ganfan988/ResourceGithub.git
+﻿https://github.com/ganfan988/ResourceGithub.git
 
 https://start.aliyun.com
 
@@ -38,43 +38,26 @@ http://start.springboot.io/
       <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
       <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
    </properties>
-
-  <!--引入thymeleaf依赖-->
+      <!--引入thymeleaf依赖-->
  <dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-thymeleaf</artifactId>
- </dependency>
-
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-thymeleaf</artifactId>
+   </dependency>
 
 <!-- MySql驱动 -->
 <dependency>
    <groupId>mysql</groupId>
    <artifactId>mysql-connector-java</artifactId>
 </dependency>
-
 server.port=xxx
 spring.datasource.url=jdbc:mysql://localhost/xxx?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
 spring.datasource.username=
 spring.datasource.password=
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-
    <!--mybatis-->
-    <dependency>
-       <groupId>org.mybatis</groupId>
-       <artifactId>mybatis</artifactId>
-       <version>3.5.6</version>
-    </dependency>
-   
-
-<!-- 以下为阿里云的仓库链接 -->
-   <repositories>
-       <repository>
-           <id>aliyun-repos</id>
-           <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-           <snapshots>
-             <enabled>false</enabled>
-           </snapshots>
-        </repository>
-    </repositories>
-
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.6</version>
+        </dependency>
