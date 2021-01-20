@@ -46,6 +46,13 @@ http://start.springboot.io/
  </dependency>
 
 
+
+<!--start JDBC-->
+ <dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-jdbc</artifactId>
+ </dependency>
+
 <!-- MySql驱动 -->
 <dependency>
    <groupId>mysql</groupId>
