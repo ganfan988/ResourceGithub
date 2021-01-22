@@ -92,3 +92,38 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     <artifactId>fastjson</artifactId>
     <version>1.2.7</version>
   </dependency>
+
+  <!--sqlserver驱动 -->
+    <dependency>
+     <groupId>com.microsoft.sqlserver</groupId>
+     <artifactId>sqljdbc4</artifactId>
+     <version>4.0</version>
+    </dependency>
+    <!--配置-->
+    spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.168.10.122:1433;DatabaseName=Print
+    username: sa
+    password: 123456
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 1
+    testWhileIdle: true
+    testOnBorrow: true
+    testOnReturn: true
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+ <!--log4j-->
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
+
+
+
+
