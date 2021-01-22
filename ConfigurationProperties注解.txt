@@ -124,6 +124,13 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     <artifactId>spring-boot-starter-log4j2</artifactId>
 </dependency>
 
+ <!--阿里 druid连接数据库-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+
 
 
 
