@@ -118,6 +118,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     testOnReturn: true
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
+
  <!--log4j-->
   <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -130,7 +131,19 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.10</version>
         </dependency>
+<!--pom.xml你-->
+ <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
 
 
-
+<!--引入druid 数据库-->
+     <dependency>
+         <groupId>com.alibaba</groupId>
+         <artifactId>druid</artifactId>
+         <version>1.2.4</version>
+     </dependency>
