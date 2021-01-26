@@ -1,4 +1,4 @@
-https://github.com/ganfan988/ResourceGithub.git
+﻿https://github.com/ganfan988/ResourceGithub.git
 
 https://start.aliyun.com
 
@@ -72,7 +72,12 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
        <artifactId>mybatis</artifactId>
        <version>3.5.6</version>
     </dependency>
-   
+      <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+
 
 <!-- 以下为阿里云的仓库链接 -->
    <repositories>
@@ -147,3 +152,17 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
          <artifactId>druid</artifactId>
          <version>1.2.4</version>
      </dependency>
+
+
+<!--        权限控制依赖-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
