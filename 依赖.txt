@@ -10,6 +10,11 @@
             <artifactId>sqljdbc4</artifactId>
             <version>4.0</version>
         </dependency>
+  spring.datasource.test1.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+  spring.datasource.test1.jdbc-url=jdbc:sqlserver://192.168.10.122:1433;DatabaseName=Print
+  spring.datasource.test1.username=sa
+  spring.datasource.test1.password=123456
+
 
 spring:
   datasource:
